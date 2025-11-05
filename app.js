@@ -11,7 +11,7 @@ function clearDisplay() {
 }
 
 function deleteChar() {
-  display.value = display.value.slice(0, -1);
+  display.value = display.value.substring(0, display.value.length - 1);
 }
 
 function calculate() {
@@ -21,4 +21,5 @@ function calculate() {
     catch(error){
         display.value = "Syntax Error";
     }
+
 }
